@@ -69,9 +69,9 @@ if os.path.exists(dense_csv):
     print("--> Exported: 'dense_optimization_comparison.png'")
 else:
     print(f"Warning: '{dense_csv}' not found.")
-
-
-
+    
+    
+    
 # PART B
 sparse_csv = "sparse_results.csv"
 
@@ -95,7 +95,7 @@ if os.path.exists(sparse_csv):
     # Plot 2: Dual Plot - Time and Memory vs. Sparsity Level
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.2))
 
-    # --- Subplot 1: Execution Time vs Sparsity ---
+    # Subplot 1: Execution Time vs Sparsity
     for method, col, mark in [("Dense_IKJ", "#d62728", "o"), ("Sparse_CSR", "#1f77b4", "s")]:
         sub = sparse_summary[sparse_summary["method"] == method]
         ax1.plot(
@@ -118,7 +118,7 @@ if os.path.exists(sparse_csv):
     # Add crossover highlight around 98%
     ax1.axvline(x=98.0, color="gray", linestyle=":", label="Crossover threshold (~98%)")
 
-    # --- Subplot 2: Memory Footprint vs Sparsity ---
+    # Subplot 2: Memory Footprint vs Sparsity
     for method, col, mark in [("Dense_IKJ", "#d62728", "o"), ("Sparse_CSR", "#1f77b4", "s")]:
         sub = sparse_summary[sparse_summary["method"] == method]
         ax2.plot(
