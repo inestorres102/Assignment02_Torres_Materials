@@ -19,3 +19,20 @@ Empirical study evaluating cache-friendly dense optimisations and compressed spa
 ```bash
 javac MatrixOpt.java
 javac MatrixSparse.java
+```
+
+## 4. Repository File Structure
+```text
+Assignment2/
+├── .gitignore
+├── README.md
+├── MatrixOpt.java
+├── MatrixSparse.java
+├── plot_assignment2.py
+├── dense_optimization_results.csv
+├── sparse_results.csv
+├── summary_dense_optimisation.csv
+├── summary_sparse_evaluation.csv
+├── dense_optimization_comparison.png
+└── sparse_vs_dense_analysis.png
+```
