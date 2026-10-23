@@ -1,0 +1,36 @@
+# --- Binarios y compilados de Java ---
+*.class
+*.jar
+**/target/
+
+# --- Python: cachés y entornos virtuales ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# --- Binarios de C (por si reutilizas o añades ejecutables) ---
+*.o
+*.out
+*.exe
+
+# --- LaTeX: Archivos auxiliares de compilación ---
+# (Ignoramos los temporales, pero permitimos el PDF final del informe)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# --- Entornos de desarrollo y editores ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
